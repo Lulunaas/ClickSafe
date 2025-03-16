@@ -146,7 +146,9 @@ def tld_length(tld):
     except (TypeError, AttributeError):
         return -1
 
-
+@app.route('/')
+def home():
+    return "Welcome to the ClickSafe Phishing Detection API!"
 
 
 @app.route('/predict', methods=['POST'])
