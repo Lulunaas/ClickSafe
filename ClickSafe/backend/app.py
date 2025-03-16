@@ -18,7 +18,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Load your .joblib model
-model = joblib.load('./Clicksafe/backend/ClickSafe.joblib')  # Replace with your .joblib model file
+model = joblib.load('./ClickSafe/backend/ClickSafe.joblib')  # Replace with your .joblib model file
 
 # Function to check if the URL contains an IP address
 def having_ip_address(url):
